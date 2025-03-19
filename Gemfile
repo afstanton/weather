@@ -69,3 +69,7 @@ end
 # For API calls
 gem "faraday"
 gem "httpx"
+
+# For geocoding
+gem "geocoder"
+
