@@ -7,3 +7,8 @@ For this to work, it relies on two environment variables - EMAIL_ADDRESS, for ca
 https://openweathermap.org/ has free accounts, it is generally bad practice to put API keys into repos. I didn't redact my email from the cassettes because I'm easy enough to find on the web. This is my repo, after all.
 
 Specs are primarily around the service class.
+
+Geocoding caching is handled by the Geocoder initializer.
+Caching for the weather is handled inside the weather service class.
+
+I prefer Faraday and MultiJson because you can plug in your favorite providers, which are httpx and oj for me personally.
