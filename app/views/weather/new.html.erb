@@ -1,0 +1,24 @@
+<h1>Weather</h1>
+
+<div id="errors">
+<% if @errors.present? %>
+  <%= "There were errors: #{@errors.message}. If this were a full production app, we'd have really robust error handling here." %>
+<% end %>
+</div>
+
+<div id="weather">
+<% if @weather.present? %>
+  <h3>Weather data:</h3>
+  <div>City: <%= @weather[:data][:name] %></div>
+  <div>Currently: <%= @weather[:data][:main][:temp] %> fahrenheit</div>
+  <div>Low: <%= @weather[:data][:main][:temp_min] %></div>
+  <div>High: <%= @weather[:data][:main][:temp_max] %></div>
+  <div><%= @weather[:data][:weather][0][:description] %></div>
+  <div>Wind: <%= @weather[:data][:wind][:speed] %> mph</div>
+  <div>Sunrise: <%= Time.at(@weather[:data][:sys][:sunrise]) %></div>
+  <div>Sunset: <%= Time.at(@weather[:data][:sys][:sunset]) %></div>
+  <div>This data was <%= @weather[:cached] ? '' : 'not' %> cached.</div>
+<% end %>
+</div>
+
+<%= render "form" %>
