@@ -21,9 +21,17 @@ module Weather
     def by_geo(lat, long, zip)
       url = "https://api.openweathermap.org/data/2.5/weather?lat=#{lat}&lon=#{long}&appId=#{@api_key}&units=imperial"
 
-      response = Faraday.get(url)
+      response = Rails.cache.read(zip)
+      if response.present?
+        cached = true
+      else
+        cached = false
+        response = Faraday.get(url)
+        Rails.cache.write(zip, response, expires_in: 30.minutes)
+      end
 
-      MultiJson.load(response.body, symbolize_keys: true)
+      data = MultiJson.load(response.body, symbolize_keys: true)
+      { cached: cached, data: data }
     end
   end
 end
