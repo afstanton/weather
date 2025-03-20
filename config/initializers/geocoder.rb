@@ -21,7 +21,7 @@ Geocoder.configure(
 
   # https://github.com/alexreisner/geocoder/blob/master/README_API_GUIDE.md#nominatim-nominatim
   # Substitute your own contact information
-  http_headers: { "User-Agent" => ENV['EMAIL_ADDRESS'] },
+  http_headers: { "User-Agent" => ENV["EMAIL_ADDRESS"] },
 
   # Cache configuration
   # cache_options: {

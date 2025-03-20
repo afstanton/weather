@@ -73,3 +73,6 @@ gem "httpx"
 # For geocoding
 gem "geocoder"
 
+# For JSON
+gem "multi_json"
+gem "oj"

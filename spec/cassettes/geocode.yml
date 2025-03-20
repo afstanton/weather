@@ -1,0 +1,38 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=46254,%20US
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - afstanton@gmail.com
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 20 Mar 2025 00:19:14 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '597'
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3sicGxhY2VfaWQiOjM1MzY0NjA1NiwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJsYXQiOiIzOS44NDQ0OTA5NDE1NjU2MjQiLCJsb24iOiItODYuMjYwMDY2MTQwNDE5MDQiLCJjbGFzcyI6InBsYWNlIiwidHlwZSI6InBvc3Rjb2RlIiwicGxhY2VfcmFuayI6MjEsImltcG9ydGFuY2UiOjAuMTIwMDA5OTk5OTk5OTk5OTUsImFkZHJlc3N0eXBlIjoicG9zdGNvZGUiLCJuYW1lIjoiNDYyNTQiLCJkaXNwbGF5X25hbWUiOiI0NjI1NCwgSW5kaWFuYXBvbGlzLCBNYXJpb24gQ291bnR5LCBJbmRpYW5hLCBVbml0ZWQgU3RhdGVzIiwiYWRkcmVzcyI6eyJwb3N0Y29kZSI6IjQ2MjU0IiwiY2l0eSI6IkluZGlhbmFwb2xpcyIsImNvdW50eSI6Ik1hcmlvbiBDb3VudHkiLCJzdGF0ZSI6IkluZGlhbmEiLCJJU08zMTY2LTItbHZsNCI6IlVTLUlOIiwiY291bnRyeSI6IlVuaXRlZCBTdGF0ZXMiLCJjb3VudHJ5X2NvZGUiOiJ1cyJ9LCJib3VuZGluZ2JveCI6WyIzOS43OTQ0OTA5IiwiMzkuODk0NDkwOSIsIi04Ni4zMTAwNjYxIiwiLTg2LjIxMDA2NjEiXX1d
+  recorded_at: Thu, 20 Mar 2025 00:19:14 GMT
+recorded_with: VCR 6.3.1
