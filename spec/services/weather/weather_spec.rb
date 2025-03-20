@@ -1,59 +1,59 @@
 require 'rails_helper'
 
 RSpec.describe Weather::Weather do
-  let(:zip) { '46254' }
-  let(:country) { 'US' }
-  let(:lat) { 39.844490941565624 }
-  let(:long) { -86.26006614041904 }
+  let(:address) { '1 Monument Circle, Indianapolis, IN 46204' }
+  let(:lat) { 39.768505950000005 }
+  let(:long) { -86.1580444334403 }
+  let(:zip) { '46204' }
   let(:weather) do
-{ coord: { lon: -86.2601, lat: 39.8445 },
+{coord: {lon: -86.158, lat: 39.7685},
  weather:
-  [ { id: 803,
+  [{id: 803,
     main: "Clouds",
     description: "broken clouds",
-    icon: "04n" } ],
+    icon: "04n"}],
  base: "stations",
  main:
-  { temp: 59.88,
-   feels_like: 59.47,
-   temp_min: 57.09,
-   temp_max: 62.98,
+  {temp: 59.77,
+   feels_like: 59.07,
+   temp_min: 57.22,
+   temp_max: 62.29,
    pressure: 997,
-   humidity: 83,
+   humidity: 77,
    sea_level: 997,
-   grnd_level: 967 },
+   grnd_level: 970},
  visibility: 10000,
- wind: { speed: 14.97, deg: 180, gust: 24.16 },
- clouds: { all: 75 },
- dt: 1742432189,
+ wind: {speed: 14.97, deg: 210, gust: 26.46},
+ clouds: {all: 75},
+ dt: 1742435343,
  sys:
-  { type: 2,
+  {type: 2,
    id: 2002558,
    country: "US",
-   sunrise: 1742384981,
-   sunset: 1742428544 },
+   sunrise: 1742384957,
+   sunset: 1742428520},
  timezone: -14400,
- id: 4265146,
- name: "Speedway",
- cod: 200 }
+ id: 4259418,
+ name: "Indianapolis",
+ cod: 200} 
   end
   describe '#geocode' do
     it 'correctly geocodes Indianapolis' do
       VCR.use_cassette('geocode') do
         w = described_class.new('XXXXXX')
 
-        location = w.geocode(zip, country)
-        expect(location).to eq([ lat, long ])
+        location = w.geocode(address)
+        expect(location).to eq([ lat, long, zip ])
       end
     end
   end
 
-  describe '#by_zip' do
+  describe '#by_address' do
     it 'gets the weather for Indianapolis' do
       VCR.use_cassette('weather') do
         w = described_class.new('XXXXXX')
 
-        result = w.by_zip(zip, country)
+        result = w.by_address(address)
         expect(result).to match(weather)
       end
     end
@@ -64,7 +64,7 @@ RSpec.describe Weather::Weather do
       VCR.use_cassette('weather') do
         w = described_class.new('XXXXXX')
 
-        result = w.by_geo(lat, long)
+        result = w.by_geo(lat, long, zip)
         expect(result).to match(weather)
       end
     end

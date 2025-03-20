@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=46254,%20US
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=1%20Monument%20Circle,%20Indianapolis,%20IN%2046204
     body:
       encoding: US-ASCII
       string: ''
@@ -21,11 +21,11 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Thu, 20 Mar 2025 00:56:28 GMT
+      - Thu, 20 Mar 2025 01:50:36 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
-      - '597'
+      - '1505'
       Connection:
       - keep-alive
       Keep-Alive:
@@ -33,6 +33,6 @@ http_interactions:
     body:
       encoding: ASCII-8BIT
       string: !binary |-
-        W3sicGxhY2VfaWQiOjM1MzY0NjA1NiwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJsYXQiOiIzOS44NDQ0OTA5NDE1NjU2MjQiLCJsb24iOiItODYuMjYwMDY2MTQwNDE5MDQiLCJjbGFzcyI6InBsYWNlIiwidHlwZSI6InBvc3Rjb2RlIiwicGxhY2VfcmFuayI6MjEsImltcG9ydGFuY2UiOjAuMTIwMDA5OTk5OTk5OTk5OTUsImFkZHJlc3N0eXBlIjoicG9zdGNvZGUiLCJuYW1lIjoiNDYyNTQiLCJkaXNwbGF5X25hbWUiOiI0NjI1NCwgSW5kaWFuYXBvbGlzLCBNYXJpb24gQ291bnR5LCBJbmRpYW5hLCBVbml0ZWQgU3RhdGVzIiwiYWRkcmVzcyI6eyJwb3N0Y29kZSI6IjQ2MjU0IiwiY2l0eSI6IkluZGlhbmFwb2xpcyIsImNvdW50eSI6Ik1hcmlvbiBDb3VudHkiLCJzdGF0ZSI6IkluZGlhbmEiLCJJU08zMTY2LTItbHZsNCI6IlVTLUlOIiwiY291bnRyeSI6IlVuaXRlZCBTdGF0ZXMiLCJjb3VudHJ5X2NvZGUiOiJ1cyJ9LCJib3VuZGluZ2JveCI6WyIzOS43OTQ0OTA5IiwiMzkuODk0NDkwOSIsIi04Ni4zMTAwNjYxIiwiLTg2LjIxMDA2NjEiXX1d
-  recorded_at: Thu, 20 Mar 2025 00:56:28 GMT
+        W3sicGxhY2VfaWQiOjMxNDk2MDM2OCwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6IndheSIsIm9zbV9pZCI6MzM5NzczNzYwLCJsYXQiOiIzOS43Njg1MDU5NTAwMDAwMDUiLCJsb24iOiItODYuMTU4MDQ0NDMzNDQwMyIsImNsYXNzIjoidG91cmlzbSIsInR5cGUiOiJhdHRyYWN0aW9uIiwicGxhY2VfcmFuayI6MzAsImltcG9ydGFuY2UiOjAuNDAwNDA0NDAyNTAyMDQ1OSwiYWRkcmVzc3R5cGUiOiJ0b3VyaXNtIiwibmFtZSI6IlNvbGRpZXJzIGFuZCBTYWlsb3JzIE1vbnVtZW50IiwiZGlzcGxheV9uYW1lIjoiU29sZGllcnMgYW5kIFNhaWxvcnMgTW9udW1lbnQsIDEsIE1vbnVtZW50IENpcmNsZSwgSW5kaWFuYXBvbGlzLCBNYXJpb24sIEluZGlhbmEsIDQ2MjA0LCBVbml0ZWQgU3RhdGVzIiwiYWRkcmVzcyI6eyJ0b3VyaXNtIjoiU29sZGllcnMgYW5kIFNhaWxvcnMgTW9udW1lbnQiLCJob3VzZV9udW1iZXIiOiIxIiwicm9hZCI6Ik1vbnVtZW50IENpcmNsZSIsImNpdHkiOiJJbmRpYW5hcG9saXMiLCJjb3VudHkiOiJNYXJpb24iLCJzdGF0ZSI6IkluZGlhbmEiLCJJU08zMTY2LTItbHZsNCI6IlVTLUlOIiwicG9zdGNvZGUiOiI0NjIwNCIsImNvdW50cnkiOiJVbml0ZWQgU3RhdGVzIiwiY291bnRyeV9jb2RlIjoidXMifSwiYm91bmRpbmdib3giOlsiMzkuNzY4NDM5MCIsIjM5Ljc2ODYwNDIiLCItODYuMTU4MTY0NyIsIi04Ni4xNTc5MjI4Il19LHsicGxhY2VfaWQiOjMxMTIyOTQ1MCwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6IndheSIsIm9zbV9pZCI6MzQwOTY1NjYyLCJsYXQiOiIzOS43Njc3NzQ1NSIsImxvbiI6Ii04Ni4xNTc2MjQ1NjQ2MTkyIiwiY2xhc3MiOiJidWlsZGluZyIsInR5cGUiOiJvZmZpY2UiLCJwbGFjZV9yYW5rIjozMCwiaW1wb3J0YW5jZSI6Ny40MDAzOTY3MzQ1NjQ3NjJlLTA1LCJhZGRyZXNzdHlwZSI6ImJ1aWxkaW5nIiwibmFtZSI6IklQTCBCdWlsZGluZyIsImRpc3BsYXlfbmFtZSI6IklQTCBCdWlsZGluZywgMSwgTW9udW1lbnQgQ2lyY2xlLCBJbmRpYW5hcG9saXMsIE1hcmlvbiwgSW5kaWFuYSwgNDYyMDQsIFVuaXRlZCBTdGF0ZXMiLCJhZGRyZXNzIjp7ImJ1aWxkaW5nIjoiSVBMIEJ1aWxkaW5nIiwiaG91c2VfbnVtYmVyIjoiMSIsInJvYWQiOiJNb251bWVudCBDaXJjbGUiLCJjaXR5IjoiSW5kaWFuYXBvbGlzIiwiY291bnR5IjoiTWFyaW9uIiwic3RhdGUiOiJJbmRpYW5hIiwiSVNPMzE2Ni0yLWx2bDQiOiJVUy1JTiIsInBvc3Rjb2RlIjoiNDYyMDQiLCJjb3VudHJ5IjoiVW5pdGVkIFN0YXRlcyIsImNvdW50cnlfY29kZSI6InVzIn0sImJvdW5kaW5nYm94IjpbIjM5Ljc2NzU4NzciLCIzOS43Njc5ODY0IiwiLTg2LjE1NzkxNDMiLCItODYuMTU3Mjg4MyJdfV0=
+  recorded_at: Thu, 20 Mar 2025 01:50:36 GMT
 recorded_with: VCR 6.3.1

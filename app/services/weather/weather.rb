@@ -6,19 +6,19 @@ module Weather
       @api_key = api_key
     end
 
-    def geocode(zip, country)
-      location = "#{zip}, #{country}"
-      results = Geocoder.search(location)
+    def geocode(address)
+      results = Geocoder.search(address)
 
-      results.first.coordinates
+      location = results.first.coordinates
+      location << results.first.data["address"]["postcode"]
     end
 
-    def by_zip(zip, country)
-      lat, long = geocode(zip, country)
-      by_geo(lat, long)
+    def by_address(address)
+      lat, long, zip = geocode(address)
+      by_geo(lat, long, zip)
     end
 
-    def by_geo(lat, long)
+    def by_geo(lat, long, zip)
       url = "https://api.openweathermap.org/data/2.5/weather?lat=#{lat}&lon=#{long}&appId=#{@api_key}&units=imperial"
 
       response = Faraday.get(url)

@@ -24,7 +24,11 @@
 
   <body>
     <%= yield %>
-
-Geocoding data <%= link_to "copyright OpenStreetMap", "https://www.openstreetmap.org/copyright" %>
+    <div>
+      Geocoding data <%= link_to "copyright OpenStreetMap", "https://www.openstreetmap.org/copyright" %>
+    </div>
+    <div>
+      Weather data provided by <%= link_to "OpenWeather", "https://openweathermap.org/" %>
+    </div>
   </body>
 </html>

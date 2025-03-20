@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=46254,%20US
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=1%20Monument%20Circle,%20Indianapolis,%20IN%2046204
     body:
       encoding: US-ASCII
       string: ''
@@ -21,11 +21,11 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Thu, 20 Mar 2025 00:56:28 GMT
+      - Thu, 20 Mar 2025 01:50:37 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
-      - '597'
+      - '1505'
       Connection:
       - keep-alive
       Keep-Alive:
@@ -33,11 +33,11 @@ http_interactions:
     body:
       encoding: ASCII-8BIT
       string: !binary |-
-        W3sicGxhY2VfaWQiOjM1MzY0NjA1NiwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJsYXQiOiIzOS44NDQ0OTA5NDE1NjU2MjQiLCJsb24iOiItODYuMjYwMDY2MTQwNDE5MDQiLCJjbGFzcyI6InBsYWNlIiwidHlwZSI6InBvc3Rjb2RlIiwicGxhY2VfcmFuayI6MjEsImltcG9ydGFuY2UiOjAuMTIwMDA5OTk5OTk5OTk5OTUsImFkZHJlc3N0eXBlIjoicG9zdGNvZGUiLCJuYW1lIjoiNDYyNTQiLCJkaXNwbGF5X25hbWUiOiI0NjI1NCwgSW5kaWFuYXBvbGlzLCBNYXJpb24gQ291bnR5LCBJbmRpYW5hLCBVbml0ZWQgU3RhdGVzIiwiYWRkcmVzcyI6eyJwb3N0Y29kZSI6IjQ2MjU0IiwiY2l0eSI6IkluZGlhbmFwb2xpcyIsImNvdW50eSI6Ik1hcmlvbiBDb3VudHkiLCJzdGF0ZSI6IkluZGlhbmEiLCJJU08zMTY2LTItbHZsNCI6IlVTLUlOIiwiY291bnRyeSI6IlVuaXRlZCBTdGF0ZXMiLCJjb3VudHJ5X2NvZGUiOiJ1cyJ9LCJib3VuZGluZ2JveCI6WyIzOS43OTQ0OTA5IiwiMzkuODk0NDkwOSIsIi04Ni4zMTAwNjYxIiwiLTg2LjIxMDA2NjEiXX1d
-  recorded_at: Thu, 20 Mar 2025 00:56:29 GMT
+        W3sicGxhY2VfaWQiOjMxNDk2MDM2OCwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6IndheSIsIm9zbV9pZCI6MzM5NzczNzYwLCJsYXQiOiIzOS43Njg1MDU5NTAwMDAwMDUiLCJsb24iOiItODYuMTU4MDQ0NDMzNDQwMyIsImNsYXNzIjoidG91cmlzbSIsInR5cGUiOiJhdHRyYWN0aW9uIiwicGxhY2VfcmFuayI6MzAsImltcG9ydGFuY2UiOjAuNDAwNDA0NDAyNTAyMDQ1OSwiYWRkcmVzc3R5cGUiOiJ0b3VyaXNtIiwibmFtZSI6IlNvbGRpZXJzIGFuZCBTYWlsb3JzIE1vbnVtZW50IiwiZGlzcGxheV9uYW1lIjoiU29sZGllcnMgYW5kIFNhaWxvcnMgTW9udW1lbnQsIDEsIE1vbnVtZW50IENpcmNsZSwgSW5kaWFuYXBvbGlzLCBNYXJpb24sIEluZGlhbmEsIDQ2MjA0LCBVbml0ZWQgU3RhdGVzIiwiYWRkcmVzcyI6eyJ0b3VyaXNtIjoiU29sZGllcnMgYW5kIFNhaWxvcnMgTW9udW1lbnQiLCJob3VzZV9udW1iZXIiOiIxIiwicm9hZCI6Ik1vbnVtZW50IENpcmNsZSIsImNpdHkiOiJJbmRpYW5hcG9saXMiLCJjb3VudHkiOiJNYXJpb24iLCJzdGF0ZSI6IkluZGlhbmEiLCJJU08zMTY2LTItbHZsNCI6IlVTLUlOIiwicG9zdGNvZGUiOiI0NjIwNCIsImNvdW50cnkiOiJVbml0ZWQgU3RhdGVzIiwiY291bnRyeV9jb2RlIjoidXMifSwiYm91bmRpbmdib3giOlsiMzkuNzY4NDM5MCIsIjM5Ljc2ODYwNDIiLCItODYuMTU4MTY0NyIsIi04Ni4xNTc5MjI4Il19LHsicGxhY2VfaWQiOjMxMTIyOTQ1MCwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6IndheSIsIm9zbV9pZCI6MzQwOTY1NjYyLCJsYXQiOiIzOS43Njc3NzQ1NSIsImxvbiI6Ii04Ni4xNTc2MjQ1NjQ2MTkyIiwiY2xhc3MiOiJidWlsZGluZyIsInR5cGUiOiJvZmZpY2UiLCJwbGFjZV9yYW5rIjozMCwiaW1wb3J0YW5jZSI6Ny40MDAzOTY3MzQ1NjQ3NjJlLTA1LCJhZGRyZXNzdHlwZSI6ImJ1aWxkaW5nIiwibmFtZSI6IklQTCBCdWlsZGluZyIsImRpc3BsYXlfbmFtZSI6IklQTCBCdWlsZGluZywgMSwgTW9udW1lbnQgQ2lyY2xlLCBJbmRpYW5hcG9saXMsIE1hcmlvbiwgSW5kaWFuYSwgNDYyMDQsIFVuaXRlZCBTdGF0ZXMiLCJhZGRyZXNzIjp7ImJ1aWxkaW5nIjoiSVBMIEJ1aWxkaW5nIiwiaG91c2VfbnVtYmVyIjoiMSIsInJvYWQiOiJNb251bWVudCBDaXJjbGUiLCJjaXR5IjoiSW5kaWFuYXBvbGlzIiwiY291bnR5IjoiTWFyaW9uIiwic3RhdGUiOiJJbmRpYW5hIiwiSVNPMzE2Ni0yLWx2bDQiOiJVUy1JTiIsInBvc3Rjb2RlIjoiNDYyMDQiLCJjb3VudHJ5IjoiVW5pdGVkIFN0YXRlcyIsImNvdW50cnlfY29kZSI6InVzIn0sImJvdW5kaW5nYm94IjpbIjM5Ljc2NzU4NzciLCIzOS43Njc5ODY0IiwiLTg2LjE1NzkxNDMiLCItODYuMTU3Mjg4MyJdfV0=
+  recorded_at: Thu, 20 Mar 2025 01:50:37 GMT
 - request:
     method: get
-    uri: https://api.openweathermap.org/data/2.5/weather?appId=XXXXXX&lat=39.844490941565624&lon=-86.26006614041904&units=imperial
+    uri: https://api.openweathermap.org/data/2.5/weather?appId=XXXXXX&lat=0.0&lon=0.0&units=imperial
     body:
       encoding: US-ASCII
       string: ''
@@ -56,15 +56,15 @@ http_interactions:
       Server:
       - openresty
       Date:
-      - Thu, 20 Mar 2025 00:56:29 GMT
+      - Thu, 20 Mar 2025 01:50:37 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
-      - '523'
+      - '479'
       Connection:
       - keep-alive
       X-Cache-Key:
-      - "/data/2.5/weather?appId=XXXXXX&lat=39.84&lon=-86.26&units=imperial"
+      - "/data/2.5/weather?appId=XXXXXX&lat=0&lon=0&units=imperial"
       Access-Control-Allow-Origin:
       - "*"
       Access-Control-Allow-Credentials:
@@ -73,7 +73,48 @@ http_interactions:
       - GET, POST
     body:
       encoding: UTF-8
-      string: '{"coord":{"lon":-86.2601,"lat":39.8445},"weather":[{"id":803,"main":"Clouds","description":"broken
-        clouds","icon":"04n"}],"base":"stations","main":{"temp":59.88,"feels_like":59.47,"temp_min":57.09,"temp_max":62.98,"pressure":997,"humidity":83,"sea_level":997,"grnd_level":967},"visibility":10000,"wind":{"speed":14.97,"deg":180,"gust":24.16},"clouds":{"all":75},"dt":1742432189,"sys":{"type":2,"id":2002558,"country":"US","sunrise":1742384981,"sunset":1742428544},"timezone":-14400,"id":4265146,"name":"Speedway","cod":200}'
-  recorded_at: Thu, 20 Mar 2025 00:56:29 GMT
+      string: '{"coord":{"lon":0,"lat":0},"weather":[{"id":500,"main":"Rain","description":"light
+        rain","icon":"10n"}],"base":"stations","main":{"temp":82.42,"feels_like":89.28,"temp_min":82.42,"temp_max":82.42,"pressure":1011,"humidity":78,"sea_level":1011,"grnd_level":1011},"visibility":10000,"wind":{"speed":7.52,"deg":193,"gust":7.4},"rain":{"1h":0.5},"clouds":{"all":100},"dt":1742435361,"sys":{"sunrise":1742450647,"sunset":1742494246},"timezone":0,"id":6295630,"name":"Globe","cod":200}'
+  recorded_at: Thu, 20 Mar 2025 01:50:37 GMT
+- request:
+    method: get
+    uri: https://api.openweathermap.org/data/2.5/weather?appId=XXXXXX&lat=39.768505950000005&lon=-86.1580444334403&units=imperial
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.12.2
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip, deflate
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Thu, 20 Mar 2025 01:53:55 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '526'
+      Connection:
+      - keep-alive
+      X-Cache-Key:
+      - "/data/2.5/weather?appId=XXXXXX&lat=39.77&lon=-86.16&units=imperial"
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, POST
+    body:
+      encoding: UTF-8
+      string: '{"coord":{"lon":-86.158,"lat":39.7685},"weather":[{"id":803,"main":"Clouds","description":"broken
+        clouds","icon":"04n"}],"base":"stations","main":{"temp":59.77,"feels_like":59.07,"temp_min":57.22,"temp_max":62.29,"pressure":997,"humidity":77,"sea_level":997,"grnd_level":970},"visibility":10000,"wind":{"speed":14.97,"deg":210,"gust":26.46},"clouds":{"all":75},"dt":1742435343,"sys":{"type":2,"id":2002558,"country":"US","sunrise":1742384957,"sunset":1742428520},"timezone":-14400,"id":4259418,"name":"Indianapolis","cod":200}'
+  recorded_at: Thu, 20 Mar 2025 01:53:55 GMT
 recorded_with: VCR 6.3.1
