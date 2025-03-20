@@ -19,7 +19,7 @@ module Weather
     end
 
     def by_geo(lat, long)
-      url = "https://api.openweathermap.org/data/2.5/weather?lat=#{lat}&lon=#{long}&appId=#{@api_key}"
+      url = "https://api.openweathermap.org/data/2.5/weather?lat=#{lat}&lon=#{long}&appId=#{@api_key}&units=imperial"
 
       response = Faraday.get(url)
 
